@@ -1,0 +1,52 @@
+{
+  "name": "@castnertech/social-image-generator",
+  "description": "Generate social image cards for your blog posts, videos, and tweets!",
+  "version": "0.0.0",
+  "author": {
+    "name": "Ryan Castner",
+    "email": "castner.rr@gmail.com",
+    "url": "https://castner.tech"
+  },
+  "license": "MIT",
+  "files": [
+    "api.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "cli",
+    "sig",
+    "social",
+    "image",
+    "generator",
+    "card",
+    "og",
+    "open",
+    "graph"
+  ],
+  "bin": {
+    "sig": "cli.js"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "meow": "^7.0.0",
+    "puppeteer": "^3.0.4",
+    "puppeteer-social-image": "^0.6.0"
+  },
+  "devDependencies": {
+    "execa": "^4.0.1",
+    "jest": "^26.0.1"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "semi": false
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
