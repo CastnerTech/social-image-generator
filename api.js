@@ -1,10 +1,10 @@
 const renderSocialImage = require('puppeteer-social-image').default
 
-module.exports = async function sig({ title, image, out, logo }) {
+module.exports = async function sig({ text, image, out, logo }) {
   return renderSocialImage({
     template: 'basic',
     templateParams: {
-      title: title,
+      title: text,
       logo: logo,
       imageUrl: image,
     },
